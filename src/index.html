@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pushka</title>
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -30,7 +31,7 @@
 						</li>
 					</ul>
 				</nav>
-				<button class="header__submit">Заказать лендинг</button>
+				<button class="header__submit modal_available">Заказать лендинг</button>
 			</div>
 		</div>
 	</header>
@@ -44,7 +45,7 @@
 							<p class="section1__feature section1__feature-1">уникальный дизайн</p>
 							<p class="section1__feature section1__feature-2">фиксированные сроки</p>
 						</div>
-						<button class="section1__submit">Получить консультацию</button>
+						<button class="section1__submit modal_available">Получить консультацию</button>
 					</div>
 					<div class="section1__right-block">
 						<img src="images/section1_background.png" alt="" class="section1__background">
@@ -91,6 +92,11 @@
 						<p class="section3__content">Под продуктовым мы понимаем лендинг, разработанный под цели вашей потенциальной
 							аудитории. </p>
 						<a href="" class="section3__link">Получить консультацию</a>
+						<div class="section3__add-info">
+							<p class="section3__text">Сфокусируем внимание потенциальных
+								клиентов на вашем товаре или услуге.
+								Не забудем выделить вас на фоне конкурентов.</p>
+						</div>
 					</div>
 					<div class="section3__right-block">
 						<img src="images/section3_background.png" alt="" class="section3__background">
@@ -100,7 +106,7 @@
 		</section>
 		<section class="section4">
 			<div class="container">
-				<h2 class="section4__title"></h2>
+				<h2 class="section4__title">Понятные этапы работ</h2>
 				<div class="section4__inner-wrap">
 					<div class="section4__left-item">
 						<p class="section4__left-content section4__left-content-1">Старт работ</p>
@@ -141,8 +147,10 @@
 							<p class="section4__right-time">5 дней</p>
 						</div>
 					</div>
+					<div class="section4__left-block"></div>
+					<p class="section4__amount">14 дней</p>
 				</div>
-				<p class="section4__amount">14 дней</p>
+
 			</div>
 		</section>
 		<section class="section5">
@@ -236,7 +244,7 @@
 						</div>
 						<div class="section7__price">51 000 руб.</div>
 						<div class="section7__order">
-							<button class="section7__submit">Заказать</button>
+							<button class="section7__submit modal_available">Заказать</button>
 						</div>
 					</div>
 					<div class="section7__block section7__block-2">
@@ -265,7 +273,7 @@
 						</div>
 						<div class="section7__price">75 000 руб.</div>
 						<div class="section7__order">
-							<button class="section7__submit">Заказать</button>
+							<button class="section7__submit modal_available">Заказать</button>
 						</div>
 					</div>
 					<div class="section7__block section7__block-3">
@@ -295,7 +303,7 @@
 						</div>
 						<div class="section7__price">118 000 руб.</div>
 						<div class="section7__order">
-							<button class="section7__submit">Заказать</button>
+							<button class="section7__submit modal_available">Заказать</button>
 						</div>
 					</div>
 				</div>
@@ -342,64 +350,81 @@
 		<section class="section9">
 			<div class="container">
 				<h2 class="section9__title">Наши клиенты</h2>
-				<ul class="section9__block">
-					<li class="section9__item">
-						<img src="./images/tsu.png" alt="" class="section9__logo">
-					</li>
-					<li class="section9__item">
-						<img src="./images/Object.png" alt="" class="section9__logo">
-					</li>
-					<li class="section9__item">
-						<img src="./images/bridgelab.png" alt="" class="section9__logo">
-					</li>
-					<li class="section9__item">
-						<img src="./images/cotmun.png" alt="" class="section9__logo">
-					</li>
-					<li class="section9__item">
-						<img src="./images/agro.png" alt="" class="section9__logo">
-					</li>
-					<li class="section9__item">
-						<img src="./images/energy.png" alt="" class="section9__logo">
-					</li>
-				</ul>
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="./images/tsu.png" alt="" class="section9__logo">
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/Object.png" alt="" class="section9__logo">
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/bridgelab.png" alt="" class="section9__logo">
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/cotmun.png" alt="" class="section9__logo">
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/agro.png" alt="" class="section9__logo">
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/energy.png" alt="" class="section9__logo">
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
 	<footer class="footer">
 		<div class="footer__top-block">
-		<div class="container">
-			<div class="footer__wrap">
-				<img src="images/logo.svg" alt="" class="footer__logo">
-				<nav class="footer__nav">
-					<ul class="footer__block">
-						<li class="footer__item">
-							<a href="#" class="footer__link">Этапы работ</a>
-						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link">Преимущества</a>
-						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link">Портфолио</a>
-						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link">Стоимость</a>
-						</li>
-					</ul>
-				</nav>
-				<button class="footer__submit">Заказать лендинг</button>
-			</div>
-			
-		</div>
-	</div>
-	<div class="footer__bottom-block">
-		<div class="container">
-			<div class="footer__policy">
-				<a href="https://verno.digital/" class="footer__company">©Verno.digital</a>
-				<a href="#" class="footer__text">Политика обработки персональных данных</a>
+			<div class="container">
+				<div class="footer__wrap">
+					<img src="images/logo.svg" alt="" class="footer__logo">
+					<nav class="footer__nav">
+						<ul class="footer__block">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Этапы работ</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Преимущества</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Портфолио</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Стоимость</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="footer__submit modal_available">Заказать лендинг</button>
+				</div>
+
 			</div>
 		</div>
-	</div>
+		<div class="footer__bottom-block">
+			<div class="container">
+				<div class="footer__policy">
+					<a href="https://verno.digital/" class="footer__company">©Verno.digital</a>
+					<a href="#" class="footer__text">Политика обработки персональных данных</a>
+				</div>
+			</div>
+		</div>
 	</footer>
+
+	<div class="overlay"></div>
+	<form action="#" class="modal">
+		<div class="modal__headline">
+			<p class="modal__title">Оставить заявку</p>
+			<div class="modal__cross"></div>
+		</div>
+		<input class="modal__input" type="text" name="name" id="name" placeholder="ФИО">
+		<input class="modal__input" type="email" name="email" id="email" placeholder="Почта">
+		<input class="modal__input" type="tel" name="phone" id="phone" placeholder="Телефон">
+		<button class="modal__submit">Отправить</button>
+		<p class="modal__policy">Нажимая на кнопку «Отправить» вы соглашаетесь с <a href="#" class="modal__link">Политикой
+				обработки персональных данных</a></p>
+	</form>
+	<script src="./js/libs/swiper-bundle.min.js"></script>
 	<script src="./js/app.js"></script>
 </body>
 
