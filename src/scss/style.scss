@@ -133,8 +133,8 @@
 }
 
 .section1 {
-	padding-top: 151px;
-	padding-bottom: 190px;
+	padding-top: 188px;
+	padding-bottom: 281px;
 
 	&__wrap {
 		display: flex;
@@ -160,7 +160,7 @@
 
 	&__inner-wrap {
 		display: flex;
-		margin-bottom: 64px;
+		margin-bottom: 80px;
 	}
 
 	&__feature {
@@ -203,6 +203,7 @@
 	&__submit {
 		border: 2px solid var(--theme-color-main);
 		color: var(--theme-color-main);
+		font-size: 1.8rem;
 		border-radius: 54px;
 		padding: 24px 92px 24px 40px;
 		position: relative;
@@ -237,11 +238,11 @@
 }
 
 .section2 {
-	padding-bottom: 190px;
+	padding-bottom: 113px;
 
 	&__title {
 		@include title_h2();
-		margin-bottom: 47px;
+		margin-bottom: 57px;
 		text-align: center;
 	}
 
@@ -356,7 +357,7 @@
 
 .section4 {
 
-	padding-bottom: 200px;
+	padding-bottom: 174px;
 
 	&__title {
 		@include title_h2();
@@ -549,7 +550,7 @@
 }
 
 .section5 {
-	margin-bottom: 190px;
+	margin-bottom: 254px;
 
 	&__wrap {
 		display: grid;
@@ -562,7 +563,7 @@
 
 	&__title {
 		@include title_h2();
-		margin-bottom: 91px;
+		margin-bottom: 101px;
 		text-align: center;
 	}
 
@@ -696,7 +697,7 @@
 }
 
 .section6 {
-	margin-bottom: 130px;
+	margin-bottom: 145px;
 
 	&__title {
 		@include title_h2();
@@ -805,7 +806,7 @@
 }
 
 .section7 {
-	margin-bottom: 190px;
+	margin-bottom: 229px;
 
 	&__title {
 		@include title_h2();
