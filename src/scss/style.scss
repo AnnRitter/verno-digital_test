@@ -5,6 +5,7 @@
 @import "media.scss";
 
 @mixin title_h2 {
+	font-family: "Geometric Sans Serif V1";
 	font-size: 4.5rem;
 	font-weight: 400;
 }
@@ -48,6 +49,87 @@
 		color: white;
 		background: var(--theme-color-main);
 	}
+
+	&__burger,
+	&__burger-menu {
+		display: none;
+	}
+
+	&__burger-menu.open-burger {
+		display: block;
+	}
+
+
+	&__burger {
+		background-image: url('../images/burger.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 36px;
+		height: 22px;
+
+		&-menu {
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: white;
+			max-width: 375px;
+			width: 100%;
+		}
+
+		&-headline {
+			display: flex;
+			justify-content: space-between;
+			padding: 16px 21px;
+			box-shadow: 0px 0px 20px 0px #00000014;
+		}
+
+		&-logo {
+			width: 117px;
+			height: 31px;
+		}
+
+		&-cross {
+			background-image: url('../images/cross.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 24px;
+			height: 24px;
+			transform: rotate(45deg);
+		}
+
+		&-block {
+			text-align: center;
+		}
+
+		&-item {
+			padding-top: 32px;
+			padding-bottom: 27px;
+			border-bottom: 1px solid #F2F2F2;
+			font-size: 1.8rem;
+			font-weight: 500;
+			line-height: 150%;
+		}
+
+		&-bottom-block {
+			padding-top: 64px;
+			padding-bottom: 32px;
+		}
+
+		&-submit {
+			display: block;
+			margin: 0 auto;
+			max-width: 333px;
+			width: 100%;
+			background: var(--content-color-background-1);
+			color: var(--theme-color-main);
+			border-radius: 54px;
+			padding-top: 24px;
+			padding-bottom: 24px;
+		}
+	}
+
 }
 
 .section1 {
@@ -61,11 +143,13 @@
 	}
 
 	&__title {
+		
 		margin-bottom: 32px;
 	}
 
 	&__title,
 	.section1__title span {
+		font-family: "Geometric Sans Serif V1";
 		font-size: 5.9rem;
 		font-weight: 400;
 	}
@@ -257,7 +341,7 @@
 			height: calc(100% + 2px);
 			z-index: -1;
 			background: radial-gradient(302.44% 2678.75% at -1.32% -26.83%, #6CA1FC 0%, #B3F6E7 100%);
-			
+
 			border-radius: 6px;
 		}
 	}
@@ -659,6 +743,7 @@
 
 		&-content {
 			color: var(--content-color-font-2);
+			font-weight: 400;
 		}
 	}
 
@@ -760,6 +845,7 @@
 
 	&__subtitle {
 		text-align: center;
+		font-family: "Geometric Sans Serif V1";
 		font-size: 2.4rem;
 		text-transform: uppercase;
 	}
@@ -897,6 +983,7 @@
 		&-title {
 			max-width: 414px;
 			width: 100%;
+			font-family: "Geometric Sans Serif V1";
 			font-size: 4.5rem;
 			line-height: 130%;
 			color: var(--theme-color-main);
@@ -934,6 +1021,13 @@
 		}
 	}
 
+	&__mob-contact,
+	&__mob-contact-name,
+	&__mob-contact-position,
+	&__mob-contact-title, 
+	&__mob-contact-submit {
+		display: none;
+	}
 }
 
 .section8 {
@@ -995,7 +1089,7 @@
 }
 
 .footer {
-	
+
 	&__top-block {
 		background: var(--content-color-background-1);
 		padding-top: 72px;

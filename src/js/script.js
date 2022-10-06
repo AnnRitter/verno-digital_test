@@ -1,13 +1,20 @@
 const swiper = new Swiper('.swiper', {
-
+	slidesPerView: 2,
+	spaceBetween: 20,
 	direction: 'horizontal',
 	loop: true,
 	speed: 400,
-	spaceBetween: 66,
-	slidesPerView: 6,
+	
 	autoplay: {
 		delay: 1000,
 	},
+	breakpoints: {
+	
+			900: {
+				spaceBetween: 66,
+	slidesPerView: 6,
+			},
+	}
 
 });
 
@@ -54,3 +61,15 @@ function closeModal() {
 	overlay.classList.remove('open');
 	modal.classList.remove('open');
 }
+
+const menu = document.querySelector('.header__burger-menu')
+const burger = document.querySelector('.header__burger')
+const cross_burger = document.querySelector('.header__burger-cross')
+
+burger.addEventListener('click', function() {
+	menu.classList.add('open-burger')
+})
+
+cross_burger.addEventListener('click', function() {
+	menu.classList.remove('open-burger')
+})
